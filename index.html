@@ -10,15 +10,15 @@
     <div class="nav-wrap">
         <nav>
             <ul>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Formation</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#ancre-presentation">Présentation</a></li>
+                <li><a href="#ancre-formation">Formation</a></li>
+                <li><a href="#ancre-competences">Compétences</a></li>
+                <li><a href="#ancre-projects">Projets</a></li>
+                <li><a href="#ancre-contact">Contact</a></li>
             </ul>
         </nav>
     </div>
-    <section class="home">
+    <section class="home" id="ancre-presentation">
         <div class="presentation">
             <h1>Célia Ostapiak</h1>
             <p>            
@@ -31,20 +31,50 @@
             </p>
         </div>
         <div class="home-img">
-            <img src="floral-6548880_1280.png">
+            <img src="assets/images/floral-6548880_1280.png">
         </div>
     </section>
-    <section class="formation">
+
+    <section class="formation" id="ancre-formation">
         <h2>Formation</h2>
+        <p>OpenClassrooms: Septembre 2023 - En cours...</p>
     </section>
-    <section class="competences">
+
+    <section class="competences" id="ancre-competences">
         <h2>Compétences</h2>
+        <ul>
+            <li>Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML</li>
+            <li>Implémenter une interface responsive avec HTML et CSS (booki)</li>
+            <li>Installer un environnement de développement front-end (booki)</li>
+            <li>Intégrer du contenu conformément à une maquette avec HTML et CSS (booki)</li>
+        </ul>
     </section>
-    <section class="projets">
+
+    <section class="projects" id="ancre-projects">
         <h2>Projets</h2>
+        <article class="card-project">
+            <div class="card-content">
+                <img class="card-img" src="assets/images/preview-ohmyfood.PNG" alt="apperçu du site OhMyFood">
+                <div class="text">
+                    <h3>OhMyFood</h3>
+                    <a class="link-project" href="https://arely5.github.io/OC-P4-OhMyFood/">Voir le projet en ligne</a>
+                </div>
+            </div>
+        </article>
+        <article class="card-project">
+            <div class="card-content">
+                <img class="card-img" src="assets/images/preview-booki.PNG" alt="apperçu du site Booki">
+                <div class="text">
+                    <h3>Booki</h3>
+                    <a class="link-project" href="https://arely5.github.io/OC-P3-Booki/">Voir le projet en ligne</a>
+                </div>
+            </div>
+        </article>
     </section>
-    <footer>
+
+    <footer id="ancre-contact">
         <h2 class="contact">Contact</h2>
+        <p>Me contacter par <a href="mailto:celia.o.portfolio@gmail.com">mail</a></p>
     </footer>
     
 </body>
