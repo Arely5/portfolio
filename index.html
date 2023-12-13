@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f88e644456.js" crossorigin="anonymous"></script>
     <title>Célia Ostapiak</title>
 </head>
 <body>
-    <div class="nav-wrap">
+    <div id="navbutton" class="nav-button">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div id="navwrap" class="nav-wrap">
         <nav>
             <ul>
-                <li><a href="#ancre-presentation">Présentation</a></li>
+                <li><a href="#ancre-presentation">Accueil</a></li>
                 <li><a href="#ancre-formation">Formation</a></li>
-                <li><a href="#ancre-competences">Compétences</a></li>
                 <li><a href="#ancre-projects">Projets</a></li>
                 <li><a href="#ancre-contact">Contact</a></li>
             </ul>
@@ -35,16 +38,6 @@
         <section class="formation" id="ancre-formation">
             <h2>Formation</h2>
             <p>OpenClassrooms: Septembre 2023 - En cours...</p>
-        </section>
-
-        <section class="competences" id="ancre-competences">
-            <h2>Compétences</h2>
-            <ul>
-                <li>Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML</li>
-                <li>Implémenter une interface responsive avec HTML et CSS (booki)</li>
-                <li>Installer un environnement de développement front-end (booki)</li>
-                <li>Intégrer du contenu conformément à une maquette avec HTML et CSS (booki)</li>
-            </ul>
         </section>
 
         <section class="projects" id="ancre-projects">
@@ -70,6 +63,15 @@
                     </div>
                 </article>
             </div>
+            <div class="competences">
+                <h3>Compétences</h3>
+                <ul>
+                    <li>Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML</li>
+                    <li>Implémenter une interface responsive avec HTML et CSS (booki)</li>
+                    <li>Installer un environnement de développement front-end (booki)</li>
+                    <li>Intégrer du contenu conformément à une maquette avec HTML et CSS (booki)</li>
+                </ul>
+            </sdiv>
         </section>
 
         <footer class="contact" id="ancre-contact">
@@ -77,6 +79,19 @@
             <p>Me contacter par <a href="mailto:celia.o.portfolio@gmail.com">mail</a></p>
         </footer>
     </div>
-    
+
+    <script>
+        var navbutton = document.getElementById('navbutton');
+        var navwrap = document.getElementById('navwrap');
+
+    navbutton.addEventListener('click', () => {
+    var navvisible = navwrap.style.visibility === 'visible';
+    if (navvisible) {
+        navwrap.style.visibility = 'hidden';
+    } else {
+        navwrap.style.visibility = 'visible';
+    }
+});
+    </script>
 </body>
 </html>
