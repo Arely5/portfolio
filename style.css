@@ -12,7 +12,7 @@ ul {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* GENERAL */
@@ -38,11 +38,6 @@ body {
     font-family: Arial, sans-serif;
     font-size: 20px;
     width: 100%;
-}
-
-h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
 }
 
 h3 {
@@ -172,6 +167,15 @@ a:hover {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.39);
 }
 
+.wrap-sections h2 {
+    font-size: 125px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    letter-spacing: 50px;
+    color: rgba(0, 0, 0, 0.329);
+    text-shadow: none;
+}
+
 /*FORMATION*/
 .formation {
     display: flex;
@@ -208,8 +212,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.116);
+    background-color: rgba(0, 0, 0, 0.329);
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.089);
     border-radius: 10px;
     padding: 10px 5px 10px 10px;
