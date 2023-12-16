@@ -15,8 +15,8 @@
         <nav>
             <ul>
                 <li><a href="#ancre-presentation">Accueil</a></li>
-                <li><a href="#ancre-formation">Formation</a></li>
                 <li><a href="#ancre-projects">Projets</a></li>
+                <li><a href="#ancre-formation">Formation</a></li>
                 <li><a href="#ancre-contact">Contact</a></li>
             </ul>
         </nav>
@@ -35,12 +35,6 @@
         </div>
     </header>
     <div class="wrap-sections">
-        <section class="formation" id="ancre-formation">
-            <h2>Formation</h2>
-            <p>Autodidacte: 2022 - En cours...</p>
-            <p>OpenClassrooms: Septembre 2023 - En cours...</p>
-        </section>
-
         <section class="projects" id="ancre-projects">
             <h2>Projets</h2>
             <div class="wrap-cards">
@@ -52,7 +46,12 @@
                     </div>
                     <div class="text">
                         <h3>OhMyFood</h3>
-                        <p class="techno-projets">HTML, CSS, SASS</p>
+                        <div class="techno-projets">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-sass"></i>
+                        </div>
+                        <!--<p class="techno-projets">HTML, CSS, SASS</p>-->
                         <h4>Compétences travaillées:</h4>
                         <p class="compétences">
                             <ul>
@@ -72,7 +71,11 @@
                     </div>
                     <div class="text">
                         <h3>Booki</h3>
-                        <p class="techno-projets">HTML, CSS</p>
+                        <div class="techno-projets">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                       <!--<p class="techno-projets">HTML, CSS</p>-->
                         <h4>Compétences travaillées:</h4>
                         <p class="compétences">
                             <ul>
@@ -86,9 +89,24 @@
             </div>
         </section>
 
+        <section class="formation" id="ancre-formation">
+            <h2>Formation</h2>
+            <div class="formation-element">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>Autodidacte: 2022 - En cours...</p>
+            </div>
+            <div class="formation-element">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>OpenClassrooms: Septembre 2023 - En cours...</p>
+            </div>
+        </section>
+
         <footer class="contact" id="ancre-contact">
             <h2>Contact</h2>
-            <p>Me contacter par <a href="mailto:celia.o.portfolio@gmail.com">mail</a></p>
+            <div class="contact-content">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Me contacter par <a href="mailto:celia.o.portfolio@gmail.com">mail</a></p>
+            </div>
         </footer>
     </div>
 

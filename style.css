@@ -27,7 +27,7 @@ a {
 :root {
     --primary-color: rgb(44, 41, 41);
     --secondary-color: #363636;
-    --tertiary-color: #d39ea5;
+    --tertiary-color: #e6bcc2;
     --text-color: #ebd8D0;
     --text-white: white;
 }
@@ -172,15 +172,8 @@ a:hover {
     margin-top: 50px;
     margin-bottom: 100px;
     letter-spacing: 50px;
-    color: rgba(0, 0, 0, 0.329);
+    color: rgba(255, 255, 255, 0.397);
     text-shadow: none;
-}
-
-/*FORMATION*/
-.formation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* PROJECTS */
@@ -190,18 +183,19 @@ a:hover {
     gap: 50px;
     align-items: center;
     width: 100%;
+    color: rgba(255, 255, 255, 0.699);
 }
 .projects .wrap-cards {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
     align-items: center;
     width: 100%;
 }
 .projects .wrap-cards .card-project {
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 45px;
     width: 70%;
 }
 .projects .wrap-cards .second-card {
@@ -212,10 +206,20 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: rgba(0, 0, 0, 0.329);
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.089);
+    background-color: rgba(112, 79, 83, 0.514);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.267);
     border-radius: 10px;
     padding: 10px 5px 10px 10px;
+}
+
+.projects .wrap-cards .card-project .text .techno-projets {
+    display: flex;
+    gap: 12px;
+    font-size: 30px;
+}
+
+.projects .wrap-cards .card-project .text ul {
+    list-style: circle inside;
 }
 .projects .wrap-cards .card-project .card-img-wrap {
     width: 800px;
@@ -236,10 +240,33 @@ a:hover {
     color: var(--tertiary-color);
     text-decoration: none;
     font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
 }
 .projects .wrap-cards .card-project .link-project:hover {
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.274);
     filter: brightness(110%);
+}
+
+/*FORMATION*/
+.formation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.formation .formation-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+    height: 100px;
+    background-color: rgba(112, 79, 83, 0.514);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
 }
 
 /*CONTACT*/
@@ -247,4 +274,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.contact .contact-content {
+    display: flex;
+    gap: 15px;
 }
