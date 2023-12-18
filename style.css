@@ -98,6 +98,10 @@ a:hover {
     z-index: 1;
 }
 
+.home-background .video-responsive {
+    display: none;
+}
+
 .nav-button i {
     position: fixed;
     top: 15px;
@@ -196,7 +200,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     gap: 45px;
-    width: 70%;
 }
 .projects .wrap-cards .second-card {
     flex-direction: row-reverse;
@@ -205,11 +208,12 @@ a:hover {
     width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    background-color: rgba(112, 79, 83, 0.514);
+    gap: 20px;
+    background-color: rgba(27, 27, 27, 0.63);
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.267);
     border-radius: 10px;
     padding: 10px 5px 10px 10px;
+    font-size: 21px;
 }
 
 .projects .wrap-cards .card-project .text .techno-projets {
@@ -239,7 +243,7 @@ a:hover {
 .projects .wrap-cards .card-project .link-project {
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
     text-align: center;
     margin-top: 10px;
 }
@@ -264,7 +268,7 @@ a:hover {
     gap: 15px;
     width: 90%;
     height: 100px;
-    background-color: rgba(112, 79, 83, 0.514);
+    background-color: rgba(27, 27, 27, 0.63);
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.267);
     border-radius: 10px;
 }
@@ -280,4 +284,85 @@ a:hover {
 .contact .contact-content {
     display: flex;
     gap: 15px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+    .wrap-sections {
+        width: max-content;
+    }
+
+    .projects .wrap-cards .card-project {
+        height: 350px;
+    }
+
+    .projects .wrap-cards .card-project .text {
+        width: 275px;
+        gap: 10px;
+    }
+
+    .projects .wrap-cards .card-project .card-img-wrap {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap-sections {
+        top: 1440px;
+    }
+
+    .home h1 {
+        font-size: 125px;
+    }
+
+    .home .presentation p {
+        width: 90%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .home-background .video-desktop {
+        display: none;
+    }
+
+    .home-background .video-responsive {
+        display: inline-block;
+    }
+
+    .nav-button i {
+        top: 20px;
+        right: 20px;
+        font-size: 45px;
+    }
+
+    .nav-wrap {
+        height: 430px;
+        width: 200px;
+    }
+
+    .nav-wrap nav ul li a {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .projects .wrap-cards .card-project {
+        height: 450px;
+    }
+
+    .projects .wrap-cards .card-project .card-img-wrap {
+        height: 325px;
+    }
+
+    .projects .wrap-cards .card-project .card-img-wrap .card-img {
+        scale: 1;
+        transition: none;
+    }
+
+    .projects .wrap-cards .card-project .text {
+        font-size: 23px;
+    }
+
+    .formation, .contact {
+        font-size: 30px;
+    }
 }
