@@ -1,6 +1,3 @@
-/* Images avec bas couvert progressivement au scroll
-bordure entre deux section arrondie
-video au lieu de photo */
 /* RESET */
 body, div, ul, li, h1, h2, h3, h4, form, fieldset, input, textarea, p {
   margin: 0;
@@ -76,8 +73,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     font-size: 25px;
@@ -227,6 +222,7 @@ a:hover {
 }
 .projects .wrap-cards .card-project .card-img-wrap {
     width: 800px;
+    min-height: 300px;
     overflow: hidden;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.199);
     border-radius: 15px;
@@ -234,11 +230,11 @@ a:hover {
 .projects .wrap-cards .card-project .card-img-wrap .card-img {
     width: 100%;
     height: 100%;
-    scale: 1.3;
-    transition: scale 0.4s ease-out;
+    transform: scale(1.3);
+    transition: all 0.4s ease-out;
 }
 .projects .wrap-cards .card-project .card-img-wrap .card-img:hover {
-    scale: 1;
+    transform: scale(1);
 }
 .projects .wrap-cards .card-project .link-project {
     color: var(--tertiary-color);
@@ -306,18 +302,23 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {  
     .wrap-sections {
+        min-width: 100vw;
         top: 1440px;
     }
 
-    .home h1 {
-        font-size: 125px;
+    .wrap-sections h2 {
+        font-size: 70px;
+        letter-spacing: 35px;
+    }
+
+    .home .presentation h1 {
+        font-size: 70px;
     }
 
     .home .presentation p {
         width: 90%;
-        font-size: 40px;
         text-align: center;
     }
 
@@ -332,37 +333,57 @@ a:hover {
     .nav-button i {
         top: 20px;
         right: 20px;
-        font-size: 45px;
-    }
-
-    .nav-wrap {
-        height: 430px;
-        width: 200px;
+        font-size: 30px;
     }
 
     .nav-wrap nav ul li a {
-        font-size: 30px;
         margin-left: 10px;
+    }
+    .projects {
+        height: 1500px;
+    }
+
+    .projects .wrap-cards {
+        gap: 300px;
     }
 
     .projects .wrap-cards .card-project {
-        height: 450px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .projects .wrap-cards .second-card {
+        flex-direction: column;
     }
 
     .projects .wrap-cards .card-project .card-img-wrap {
         height: 325px;
-    }
-
-    .projects .wrap-cards .card-project .card-img-wrap .card-img {
-        scale: 1;
-        transition: none;
+        width: 600px;
     }
 
     .projects .wrap-cards .card-project .text {
         font-size: 23px;
+        width: 587px;
     }
 
     .formation, .contact {
-        font-size: 30px;
+        font-size: 23px;
     }
+}
+
+@media screen and (max-width: 375px) {
+
+    .home .presentation p {
+        height: 100vh;
+    }
+
+    .wrap-sections {
+        top: 850px;
+        padding-left: 10px;
+    }
+
+    .nav-wrap {
+        height: 400px;
+    }
+    
 }
