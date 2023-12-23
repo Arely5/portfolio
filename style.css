@@ -64,6 +64,10 @@ a:hover {
     color: var(--text-white);
 }
 
+.fa-brands:hover {
+    color: var(--tertiary-color);
+} 
+
 /* HOME */
 .home .presentation {
     position: fixed;
@@ -242,10 +246,14 @@ a:hover {
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.274);
+    transition: all 0.5s ease-out;
 }
 .projects .wrap-cards .card-project .link-project:hover {
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.274);
+    position: relative;
+    top: -1px;
     filter: brightness(110%);
+    text-shadow: 1px 3px 20px rgba(255, 255, 255, 0.288);
 }
 
 /*FORMATION*/
@@ -336,6 +344,10 @@ a:hover {
         font-size: 30px;
     }
 
+    .nav-wrap {
+        height: 400px;
+    }
+
     .nav-wrap nav ul li a {
         margin-left: 10px;
     }
@@ -371,7 +383,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 
     .home .presentation p {
         height: 100vh;
@@ -381,9 +393,12 @@ a:hover {
         top: 850px;
         padding-left: 10px;
     }
-
-    .nav-wrap {
-        height: 400px;
-    }
     
+}
+
+@media screen and (min-width: 2048px) {
+    .home-background {
+        position: fixed;
+        text-align: center;
+    }
 }
