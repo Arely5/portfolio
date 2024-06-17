@@ -24,8 +24,8 @@ a {
 :root {
     --primary-color: rgb(44, 41, 41);
     --secondary-color: #363636;
-    --tertiary-color: #e6bcc2;
-    --text-color: #ebd8D0;
+    --tertiary-color: #b9d6a8;
+    --text-color: #d0ebde;
     --text-white: white;
 }
 
@@ -288,6 +288,16 @@ a:hover {
 .contact .contact-content {
     display: flex;
     gap: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.hidden {
+    animation: fadeOut 0.5s forwards;
 }
 
 /* RESPONSIVE */
