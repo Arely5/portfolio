@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f88e644456.js" crossorigin="anonymous"></script>
     <title>Célia Ostapiak</title>
 </head>
 <body>
+    <div id="language-btn" onclick="toggleLanguage()">EN</div>
     <div id="navbutton" class="nav-button">
-        <i class="fa-solid fa-bars"></i>
+        <img id="icon-nav" src="assets/icons/bars-solid.svg">
     </div>
     <div id="navwrap" class="nav-wrap">
         <nav>
             <ul>
-                <li><a href="#ancre-presentation">Accueil</a></li>
-                <li><a href="#ancre-projects">Projets</a></li>
-                <li><a href="#ancre-formation">Formation</a></li>
-                <li><a href="#ancre-contact">Contact</a></li>
+                <li><a id="nav-home" href="#ancre-presentation">Accueil</a></li>
+                <li><a id="nav-projects" href="#ancre-projects">Projets</a></li>
+                <li><a id="nav-formation" href="#ancre-formation">Formation</a></li>
+                <li><a id="nav-contact" href="#ancre-contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -32,14 +32,14 @@
         </div>
         <div class="presentation">
             <h1>Célia Ostapiak</h1>
-            <p>            
+            <p id="presentation-paragraph">            
                 Pour la faire courte, développeuse front-end basée au fin fond de la Bourgogne.
             </p>
         </div>
     </header>
     <div class="wrap-sections">
         <section class="projects" id="ancre-projects">
-            <h2>Projets</h2>
+            <h2 id="title-projects-section">Projets</h2>
             <div class="wrap-cards">
                 <article class="card-project first-card">
                     <div class="card-img-wrap">
@@ -55,14 +55,14 @@
                             <i class="fa-brands fa-sass"></i>
                         </div>
                         <div class="compétences">
-                            <h4>Compétences travaillées:</h4>
+                            <h4 class="skills-title">Compétences travaillées:</h4>
                             <ul>
-                                <li>Intégrer une maquette en mobile-first </li>
-                                <li>Mettre en œuvre des animations CSS</li>
-                                <li>Versionner son projet avec Git et Github</li>
+                                <li id="integration-skill">Intégrer une maquette en mobile-first</li>
+                                <li id="animations-skill">Mettre en œuvre des animations CSS</li>
+                                <li id="git-skill">Versionner son projet avec Git et Github</li>
                             </ul>
                         </div>
-                        <a class="link-project" href="https://arely5.github.io/OC-P4-OhMyFood/">Voir le projet en ligne</a>
+                        <a class="link-project-translation" href="https://arely5.github.io/OC-P4-OhMyFood/">Voir le projet en ligne</a>
                     </div>
                 </article>
                 <article class="card-project second-card">
@@ -78,27 +78,27 @@
                             <i class="fa-brands fa-css3-alt"></i>
                         </div>
                         <div class="compétences">
-                            <h4>Compétences travaillées:</h4>
+                            <h4 class="skills-title">Compétences travaillées:</h4>
                             <ul>
-                                <li>Implémenter une interface responsive avec HTML et CSS</li>
-                                <li>Intégrer du contenu conformément à une maquette avec HTML et CSS</li>
+                                <li id="responsive-skill">Implémenter une interface responsive avec HTML et CSS</li>
+                                <li id="integration-html-skill">Intégrer du contenu conformément à une maquette avec HTML et CSS</li>
                             </ul>
                         </div>
-                        <a class="link-project" href="https://arely5.github.io/OC-P3-Booki/">Voir le projet en ligne</a>
+                        <a class="link-project-translation" href="https://arely5.github.io/OC-P3-Booki/">Voir le projet en ligne</a>
                     </div>
                 </article>
             </div>
         </section>
 
         <section class="formation" id="ancre-formation">
-            <h2>Formation</h2>
+            <h2 id="title-formation-section">Formation</h2>
             <div class="formation-element">
                 <i class="fa-solid fa-laptop-code"></i>
-                <p>Autodidacte: 2022 - En cours...</p>
+                <p id="self-training">Autodidacte: 2022 - En cours...</p>
             </div>
             <div class="formation-element">
                 <i class="fa-solid fa-laptop-code"></i>
-                <p>OpenClassrooms: Septembre 2023 - Juin 2024</p>
+                <p id="oc-training">OpenClassrooms: Septembre 2023 - Juin 2024</p>
             </div>
         </section>
 
@@ -106,11 +106,12 @@
             <h2>Contact</h2>
             <div class="contact-content">
                 <i class="fa-regular fa-envelope"></i>
-                <p>Me contacter par <a href="mailto:celia.o.portfolio@gmail.com">mail</a></p>
+                <p id="contact-text">Me contacter par </p><a href="mailto:celia.o.portfolio@gmail.com">e-mail</a>
             </div>
         </footer>
     </div>
 
     <script src="animations.js"></script>
+    <script src="translation.js"></script>
 </body>
 </html>
