@@ -295,7 +295,11 @@ a:hover {
 
 .contact .contact-content {
     display: flex;
-    gap: 15px;
+    gap: 7px;
+}
+
+.contact .contact-content a {
+    text-decoration: underline;
 }
 
 /* ANIMATIONS */
