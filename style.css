@@ -51,7 +51,7 @@ a {
 }
 
 a:visited {
-    color: var(--text-white);
+    color: var(--tertiary-color);
 }
 
 a:hover {
@@ -295,11 +295,24 @@ a:hover {
 
 .contact .contact-content {
     display: flex;
-    gap: 7px;
+    align-items: center;
 }
 
-.contact .contact-content a {
-    text-decoration: underline;
+.contact .contact-content ul {
+    color: var(--tertiary-color);
+    list-style: circle;
+}
+
+.contact .contact-content ul a {
+    color: var(--tertiary-color);
+    font-size: 23px;
+}
+
+.contact .contact-content #github-icon {
+    height: 25px;
+    padding-left: 10px;
+    position: relative;
+    top: 4px;
 }
 
 /* ANIMATIONS */

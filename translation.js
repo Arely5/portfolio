@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 /* ALL ELEMENTS TO TRANSLATE */
 const htmlLang = document.getElementsByTagName("html")[0];
 const navHome = document.getElementById("nav-home");
@@ -17,13 +19,15 @@ const integrationHtmlSkill = document.getElementById("integration-html-skill");
 
 const titleFormationSection = document.getElementById("title-formation-section");
 const selfTraining = document.getElementById("self-training");
-const ocTraining = document.getElementById("oc-training");    
-const contactText = document.getElementById("contact-text");
-const emailLink = contactText.querySelector("a");
+const ocTraining = document.getElementById("oc-training");
 
 const languageBtn = document.getElementById("language-btn");
 
 let currentLanguage = languageBtn.textContent === 'EN' ? 'fr' : 'en';
+
+languageBtn.onclick = function() {
+    toggleLanguage();
+}
 
 function toggleLanguage() {
     if (currentLanguage === 'en') {
@@ -63,7 +67,6 @@ function translateToEN() {
     titleFormationSection.textContent = "Training";
     selfTraining.textContent = "Self-taught: 2022 - In progress...";
     ocTraining.textContent = "OpenClassrooms: September 2023 - June 2024";
-    contactText.textContent = "Contact me by ";
 }
 
 function translateToFR() {
@@ -93,5 +96,5 @@ function translateToFR() {
     titleFormationSection.textContent = "Formation";
     selfTraining.textContent = "Autodidacte: 2022 - En cours...";
     ocTraining.textContent = "OpenClassrooms: Septembre 2023 - Juin 2024";
-    contactText.textContent = "Me contacter par ";
 }
+});
