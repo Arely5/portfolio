@@ -16,6 +16,7 @@ const gitSkill = document.getElementById("git-skill");
 const linkProject = document.querySelectorAll(".link-project-translation");
 const responsiveSkill = document.getElementById("responsive-skill");
 const integrationHtmlSkill = document.getElementById("integration-html-skill");
+const basicJsSkills = document.getElementById("basic-js-skills");
 
 const titleFormationSection = document.getElementById("title-formation-section");
 const selfTraining = document.getElementById("self-training");
@@ -63,6 +64,7 @@ function translateToEN() {
     });
     responsiveSkill.textContent = "Implement a responsive interface with HTML and CSS";
     integrationHtmlSkill.textContent = "Integrate a mock-up with HTML and CSS";
+    basicJsSkills.textContent = "Creating an interactive carousel with JavaScript"
 
     titleFormationSection.textContent = "Training";
     selfTraining.textContent = "Self-taught: 2022 - In progress...";
@@ -92,6 +94,7 @@ function translateToFR() {
     });
     responsiveSkill.textContent = "Implémenter une interface responsive avec HTML et CSS";
     integrationHtmlSkill.textContent = "Intégrer du contenu conformément à une maquette avec HTML et CSS";
+    basicJsSkills.textContent = "Créer un carrousel interactif avec JavaScript";
 
     titleFormationSection.textContent = "Formation";
     selfTraining.textContent = "Autodidacte: 2022 - En cours...";

@@ -15,8 +15,8 @@ a {
 /* GENERAL */
 @font-face {
     font-family: 'Courgette';
-    src: url('assets/Courgette-Regular.woff2') format('woff2'),
-        url('assets/Courgette-Regular.woff') format('woff');
+    src: url('assets/fonts/Courgette-Regular.ttf') format('ttf'),
+        url('assets/fonts/Courgette-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -118,7 +118,7 @@ a:hover {
     cursor: pointer;
 }
 
-.nav-button i:hover {
+.nav-button #icon-nav:hover {
     filter: brightness(110%);
     text-shadow: 0 2px 20px rgba(255, 255, 255, 0.363);
 }
@@ -315,6 +315,82 @@ a:hover {
     top: 4px;
 }
 
+/* PAGE SOPHIE BLUEL */
+#back-home {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    height: 25px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#back-home #back-home-link {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    height: 100%;
+}
+#back-home #back-home-link:hover {
+    filter: brightness(101%);
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.363);
+}
+
+#back-home #arrow-left {
+    height: 100%;
+}
+
+.titles-page-sb {
+    width: 100%;
+    text-align: center;
+}
+
+.description-text {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+    column-gap: 30px;
+    row-gap: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery article {
+    text-align: center;
+}
+
+#gallery figcaption {
+    margin-top: 10px;
+}
+
+.img-wrap-articles {
+    overflow: hidden;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+}
+
+#gallery article img {
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+#gallery article img:hover {
+    transform: scale(1.2);
+}
+
 /* ANIMATIONS */
 @keyframes fadeOut {
     from { opacity: 1; }
@@ -326,6 +402,7 @@ a:hover {
 }
 
 /* RESPONSIVE */
+/* TABLET */
 @media screen and (max-width: 1024px) {
     .wrap-sections {
         width: max-content;
@@ -348,7 +425,6 @@ a:hover {
 @media screen and (max-width: 768px) {  
     .wrap-sections {
         min-width: 100vw;
-        top: 1440px;
     }
 
     .wrap-sections h2 {
@@ -356,7 +432,8 @@ a:hover {
         letter-spacing: 35px;
     }
 
-    .home .presentation h1 {
+    .presentation h1 {
+        margin-top: 100px;
         font-size: 70px;
     }
 
@@ -371,9 +448,14 @@ a:hover {
 
     .home-background .video-responsive {
         display: inline-block;
+        width: 100%;
     }
 
-    .nav-button i {
+    #language-btn {
+        font-size: 30px;
+    }
+
+    .nav-button #icon-nav {
         top: 20px;
         right: 20px;
         font-size: 30px;
@@ -387,7 +469,7 @@ a:hover {
         margin-left: 10px;
     }
     .projects {
-        height: 1500px;
+        height: 2800px;
     }
 
     .projects .wrap-cards {
@@ -416,8 +498,55 @@ a:hover {
     .formation, .contact {
         font-size: 23px;
     }
+
+    #back-home {
+        height: 30px;
+    }
+
+    #home-page {
+        font-size: 30px;
+    }
+
+    #title-sb {
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .description-text {
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 25px;
+    }
+
+    #wrap-second-page {
+        max-width: 768px;
+    }
+
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .img-wrap-articles {
+        height: 310px;
+    }
+    
+    #gallery article img {
+        width: 100%;
+        transform: scale(1);
+        transition: all 0.4s ease-out;
+    }
+    
+    #gallery article img:hover {
+        transform: scale(1.2);
+    }
 }
 
+/* MOBILE */
 @media screen and (max-width: 425px) {
 
     .home .presentation p {
@@ -431,6 +560,7 @@ a:hover {
     
 }
 
+/* BIG SCREENS */
 @media screen and (min-width: 2048px) {
     .home-background {
         position: fixed;
