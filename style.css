@@ -308,7 +308,7 @@ a:hover {
     font-size: 23px;
 }
 
-.contact .contact-content #github-icon {
+.contact .contact-content #github-icon, .contact .contact-content #x-icon, .contact .contact-content #mail-icon {
     height: 25px;
     padding-left: 10px;
     position: relative;
